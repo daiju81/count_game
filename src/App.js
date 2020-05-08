@@ -18,7 +18,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <h1 css={titleStyle}>カウントゲーム</h1>
+        <h1 css={titleStyle}>カウントゲーム(1から10)</h1>
         <Count />
       </div>
     );

@@ -13,14 +13,25 @@ class CountButton extends Component {
   }
   render() {
     return (
-      <div
-        className="siimple-btn siimple-btn--primary siimple-btn--fluid"
-        css={siimpleBtnFixStyle}
-        onClick={() => {
-          this.props.countBtn();
-        }}
-      >
-        Fluid button
+      <div>
+        <div
+          className="siimple-btn siimple-btn--primary siimple-btn--fluid"
+          css={siimpleBtnFixStyle}
+          onClick={() => {
+            this.props.countBtn();
+          }}
+        >
+          +1
+        </div>
+        <div
+          className="siimple-btn siimple-btn--dark siimple-btn--fluid"
+          css={siimpleBtnFixStyle}
+          onClick={() => {
+            this.props.countMinusBtn();
+          }}
+        >
+          -1
+        </div>
       </div>
     );
   }

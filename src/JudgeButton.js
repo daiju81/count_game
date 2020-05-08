@@ -2,26 +2,26 @@ import React, { Component } from 'react';
 import { jsx, css } from '@emotion/core';
 jsx;
 
-const risetBtnStyle = css`
+const judgeBtnStyle = css`
   text-align: center;
   padding: 1rem;
 `;
 
-class ResetButton extends Component {
+class JudgeButton extends Component {
   constructor(props) {
     super(props);
   }
   render() {
     return (
       <div>
-        <div css={risetBtnStyle}>
+        <div css={judgeBtnStyle}>
           <div
             onClick={() => {
-              this.props.resetBtn();
+              this.props.judgeBtn();
             }}
-            className="siimple-btn siimple-btn--error"
+            className="siimple-btn siimple-btn--light"
           >
-            カウントリセット
+            判定
           </div>
         </div>
       </div>
@@ -29,4 +29,4 @@ class ResetButton extends Component {
   }
 }
 
-export default ResetButton;
+export default JudgeButton;
